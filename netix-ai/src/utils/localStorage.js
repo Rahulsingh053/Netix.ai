@@ -3,6 +3,7 @@ const STORAGE_KEY = 'myAppData';
 export const saveDataToLocalStorage = (data) => {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    console.log('done');
   } catch (error) {
     console.error('Error saving data to local storage:', error);
   }

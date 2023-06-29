@@ -57,14 +57,14 @@
 }
 
 .card {
-  width: 33.33%; /* Set the width for cards in the first row */
+  width: 33.33%; 
   padding: 20px;
   box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .card {
-    width: 50%; /* Set the width for cards in the second row on smaller screens */
+    width: 50%; 
   }
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImageOverlay from "./ImageOverlay";
-import './CardList.css'; // Import the CSS file
-import './Card.css'; // Import the CSS file
+import './CardList.css';
+import './Card.css'; 
 
 
 const Card = ({ type, title, position, card }) => {
@@ -47,8 +47,9 @@ const Card = ({ type, title, position, card }) => {
   }, []);
 
   return (
-    <div className="card" onClick={handleClick}>
-      <img src={getThumbnail(card.type)} alt={card.title} />
+    <div onClick={handleClick}>
+      <p alt={card.title}> {card.title} </p>
+      <img src={getThumbnail(card.type)} />
       {showOverlay && (
         <ImageOverlay className="overlay" image={card.image} onClose={handleCloseOverlay} />
       )}
